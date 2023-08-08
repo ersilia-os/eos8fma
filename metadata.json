@@ -1,9 +1,9 @@
 {
-    "Identifier": "",
-    "Slug": "",
-    "Status": "",
-    "Title": "",
-    "Description": "",
+    "Identifier": "eos8fma",
+    "Slug": "stoned-sampler",
+    "Status": "In progress",
+    "Title": "Stoned Sampler",
+    "Description": "The STONED sampler uses small modifications to molecules represented as SELFIES to perform a search of the chemical space and generate new molecules",
     "Mode": "",
     "Task": [],
     "Input": [],
@@ -12,8 +12,10 @@
     "Output Type": [],
     "Output Shape": "",
     "Interpretation": "",
-    "Tag": [],
-    "Publication": "",
-    "Source Code": "",
-    "License": ""
+    "Tag": [
+        "Generative"
+    ],
+    "Publication": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8153210/",
+    "Source Code": "https://github.com/aspuru-guzik-group/stoned-selfies",
+    "License": "Apache-2.0"
 }
