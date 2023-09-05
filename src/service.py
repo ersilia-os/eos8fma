@@ -8,7 +8,6 @@ from bentoml.service import BentoServiceArtifact
 import pickle
 import os
 import shutil
-import collections
 import tempfile
 import subprocess
 import csv
@@ -90,7 +89,7 @@ class Model(object):
             R = []
             for r in reader:
                 R += [
-                    {"outcome": [Float(x) for x in r]}
+                    {"outcome": [String(x) for x in r]}
                 ]  # <-- EDIT: Modify according to type of output (Float, String...)
         meta = {"outcome": h}
         result = {"result": R, "meta": meta}
