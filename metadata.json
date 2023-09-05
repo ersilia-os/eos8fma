@@ -3,7 +3,7 @@
     "Slug": "stoned-sampler",
     "Status": "Ready",
     "Title": "Stoned Sampler",
-    "Description": "The STONED sampler uses small modifications to molecules represented as SELFIES to perform a search of the chemical space and generate new molecules",
+    "Description": "The STONED sampler uses small modifications to molecules represented as SELFIES to perform a search of the chemical space and generate new molecules. The use of string modifications in the SELFIES molecular representation bypasses the need for large amounts of data while maintaining a performance comparable to deep generative models.",
     "Mode": "Pretrained",
     "Task": ["Generative"],
     "Input": ["Compound"],
