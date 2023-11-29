@@ -2,7 +2,7 @@
 import os
 import csv
 import sys
-from sampler import StonedSingleSampler
+from _sampler import StonedSingleSampler
 
 # parse arguments
 input_file = sys.argv[1]
@@ -23,12 +23,10 @@ outputs = []
 for smi in smiles_list:
     o = sampler.sample(smi, 5000)
     outputs += [o]
-# TODO
-# Limit the output to 1000 smiles in case we have too many
 
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow([f"smi_{i}" for i in range(1000)])  # header
+    writer.writerow([f"smi_{i}" for i in range(100)])  # header
     for o in outputs:
         writer.writerow(o)
