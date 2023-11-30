@@ -77,6 +77,6 @@ class StonedSingleSampler(object):
         sampled_smiles_ordered = self._sort_smiles(smiles, sampled_smiles)
         sampled_smiles_selected = sampled_smiles_ordered[:1000]
         if len(sampled_smiles_selected) < 1000:
-            sampled_smiles_selected = list(sampled_smiles_selected) + [""]*(1000-len(sampled_smiles_selected))
+            sampled_smiles_selected.extend([None] * (1000 - len(sampled_smiles_selected)))
         return sampled_smiles_selected
     
