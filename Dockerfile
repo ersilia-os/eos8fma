@@ -3,6 +3,7 @@ MAINTAINER ersilia
 
 RUN pip install rdkit==2023.3.3
 RUN pip install exmol==3.0.3
+RUN conda install -c conda-forge xorg-libxrender xorg-libxtst
 
 WORKDIR /repo
 COPY . /repo
