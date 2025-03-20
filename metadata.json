@@ -31,5 +31,6 @@
     "Docker Architecture": [
         "AMD64",
         "ARM64"
-    ]
+    ],
+    "Docker Pack Method": "BentoML"
 }
