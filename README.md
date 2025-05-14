@@ -2,44 +2,87 @@
 
 The STONED sampler uses small modifications to molecules represented as SELFIES to perform a search of the chemical space and generate new molecules. The use of string modifications in the SELFIES molecular representation bypasses the need for large amounts of data while maintaining a performance comparable to deep generative models.
 
-## Identifiers
+This model was incorporated on 2023-08-08.
 
-* EOS model ID: `eos8fma`
-* Slug: `stoned-sampler`
+## Information
+### Identifiers
+- **Ersilia Identifier:** `eos8fma`
+- **Slug:** `stoned-sampler`
 
-## Characteristics
+### Domain
+- **Task:** `Sampling`
+- **Subtask:** `Generation`
+- **Biomedical Area:** `Any`
+- **Target Organism:** `Not Applicable`
+- **Tags:** `Compound generation`
 
-* Input: `Compound`
-* Input Shape: `Single`
-* Task: `Generative`
-* Output: `Compound`
-* Output Type: `String`
-* Output Shape: `List`
-* Interpretation: Up to 1000 derivatives of the input molecule
+### Input
+- **Input:** `Compound`
+- **Input Dimension:** `1`
 
-## References
+### Output
+- **Output Dimension:** `1000`
+- **Output Consistency:** `Variable`
+- **Interpretation:** Up to 1000 derivatives of the input molecule
 
-* [Publication](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8153210/)
-* [Source Code](https://github.com/aspuru-guzik-group/stoned-selfies)
-* Ersilia contributor: [GemmaTuron](https://github.com/GemmaTuron)
+Below are the **Output Columns** of the model:
+| Name | Type | Direction | Description |
+|------|------|-----------|-------------|
+| smiles_000 | string |  | Generated molecule index 0 using the STONED molecular generator |
+| smiles_001 | string |  | Generated molecule index 1 using the STONED molecular generator |
+| smiles_002 | string |  | Generated molecule index 2 using the STONED molecular generator |
+| smiles_003 | string |  | Generated molecule index 3 using the STONED molecular generator |
+| smiles_004 | string |  | Generated molecule index 4 using the STONED molecular generator |
+| smiles_005 | string |  | Generated molecule index 5 using the STONED molecular generator |
+| smiles_006 | string |  | Generated molecule index 6 using the STONED molecular generator |
+| smiles_007 | string |  | Generated molecule index 7 using the STONED molecular generator |
+| smiles_008 | string |  | Generated molecule index 8 using the STONED molecular generator |
+| smiles_009 | string |  | Generated molecule index 9 using the STONED molecular generator |
 
-## Ersilia model URLs
-* [GitHub](https://github.com/ersilia-os/eos8fma)
-* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8fma.zip)
-* [DockerHub](https://hub.docker.com/r/ersiliaos/eos8fma) (AMD64, ARM64)
+_10 of 1000 columns are shown_
+### Source and Deployment
+- **Source:** `Local`
+- **Source Type:** `External`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos8fma](https://hub.docker.com/r/ersiliaos/eos8fma)
+- **Docker Architecture:** `AMD64`, `ARM64`
+- **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8fma.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8fma.zip)
 
-## Citation
+### Resource Consumption
 
-If you use this model, please cite the [original authors](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8153210/) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
 
-## License
+### References
+- **Source Code**: [https://github.com/aspuru-guzik-group/stoned-selfies](https://github.com/aspuru-guzik-group/stoned-selfies)
+- **Publication**: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8153210/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8153210/)
+- **Publication Type:** `Peer reviewed`
+- **Publication Year:** `2021`
+- **Ersilia Contributor:** [GemmaTuron](https://github.com/GemmaTuron)
 
-This package is licensed under a GPL-3.0 license. The model contained within this package is licensed under a Apache-2.0 license.
+### License
+This package is licensed under a [GPL-3.0](https://github.com/ersilia-os/ersilia/blob/master/LICENSE) license. The model contained within this package is licensed under a [Apache-2.0](LICENSE) license.
 
-Notice: Ersilia grants access to these models 'as is' provided by the original authors, please refer to the original code repository and/or publication if you use the model in your research.
+**Notice**: Ersilia grants access to models _as is_, directly from the original authors, please refer to the original code repository and/or publication if you use the model in your research.
 
-## About Us
 
-The [Ersilia Open Source Initiative](https://ersilia.io) is a Non Profit Organization ([1192266](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5170657/full-print)) with the mission is to equip labs, universities and clinics in LMIC with AI/ML tools for infectious disease research.
+## Use
+To use this model locally, you need to have the [Ersilia CLI](https://github.com/ersilia-os/ersilia) installed.
+The model can be **fetched** using the following command:
+```bash
+# fetch model from the Ersilia Model Hub
+ersilia fetch eos8fma
+```
+Then, you can **serve**, **run** and **close** the model as follows:
+```bash
+# serve the model
+ersilia serve eos8fma
+# generate an example file
+ersilia example -n 3 -f my_input.csv
+# run the model
+ersilia run -i my_input.csv -o my_output.csv
+# close the model
+ersilia close
+```
 
-[Help us](https://www.ersilia.io/donate) achieve our mission!
+## About Ersilia
+The [Ersilia Open Source Initiative](https://ersilia.io) is a tech non-profit organization fueling sustainable research in the Global South.
+Please [cite](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff) the Ersilia Model Hub if you've found this model to be useful. Always [let us know](https://github.com/ersilia-os/ersilia/issues) if you experience any issues while trying to run it.
+If you want to contribute to our mission, consider [donating](https://www.ersilia.io/donate) to Ersilia!
