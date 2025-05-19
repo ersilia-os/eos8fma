@@ -50,7 +50,12 @@ _10 of 1000 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `857`
+- **Image Size (Mb):** `785.93`
 
+**Computational Performance (seconds):**
+- 10 inputs: `77.2`
+- 100 inputs: `-1`
+- 10000 inputs: `-1`
 
 ### References
 - **Source Code**: [https://github.com/aspuru-guzik-group/stoned-selfies](https://github.com/aspuru-guzik-group/stoned-selfies)
