@@ -3,21 +3,18 @@
     "Slug": "stoned-sampler",
     "Status": "Ready",
     "Title": "Stoned Sampler",
-    "Description": "The STONED sampler uses small modifications to molecules represented as SELFIES to perform a search of the chemical space and generate new molecules. The use of string modifications in the SELFIES molecular representation bypasses the need for large amounts of data while maintaining a performance comparable to deep generative models.\n",
+    "Description": "The STONED sampler uses small modifications to molecules represented as SELFIES to perform a search of the chemical space and generate new molecules. The use of string modifications in the SELFIES molecular representation bypasses the need for large amounts of data while maintaining a performance comparable to deep generative models.",
+    "Deployment": [
+        "Local"
+    ],
     "Source": "Local",
     "Source Type": "External",
+    "Task": "Sampling",
+    "Subtask": "Generation",
     "Input": [
         "Compound"
     ],
     "Input Dimension": 1,
-    "Task": "Sampling",
-    "Subtask": "Generation",
-    "Biomedical Area": [
-        "Any"
-    ],
-    "Target Organism": [
-        "Not Applicable"
-    ],
     "Output": [
         "Compound"
     ],
@@ -27,20 +24,23 @@
     "Tag": [
         "Compound generation"
     ],
-    "Publication": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8153210/",
+    "Biomedical Area": [
+        "Any"
+    ],
+    "Target Organism": [
+        "Not Applicable"
+    ],
     "Publication Type": "Peer reviewed",
     "Publication Year": 2021,
+    "Publication": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8153210/",
     "Source Code": "https://github.com/aspuru-guzik-group/stoned-selfies",
     "License": "Apache-2.0",
     "Contributor": "GemmaTuron",
     "Incorporation Date": "2023-08-08",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8fma.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos8fma",
     "Docker Architecture": [
         "AMD64",
         "ARM64"
-    ],
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8fma.zip",
-    "Deployment": [
-        "Local"
     ]
 }
