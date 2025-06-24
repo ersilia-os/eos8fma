@@ -21,7 +21,7 @@ with open(input_file, "r") as f:
 sampler = StonedSingleSampler()
 outputs = []
 for smi in smiles_list:
-    o = sampler.sample(smi, 10000)
+    o = sampler.sample(smi, 10000)  # Even if n is 10000, "sample" outputs max 1000 compounds
     outputs += [o]
 
 # write output in a .csv file
