@@ -4,6 +4,7 @@ The STONED sampler uses small modifications to molecules represented as SELFIES 
 
 This model was incorporated on 2023-08-08.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos8fma`
@@ -13,7 +14,7 @@ This model was incorporated on 2023-08-08.
 - **Task:** `Sampling`
 - **Subtask:** `Generation`
 - **Biomedical Area:** `Any`
-- **Target Organism:** `Not Applicable`
+- **Target Organism:** `Any`
 - **Tags:** `Compound generation`
 
 ### Input
