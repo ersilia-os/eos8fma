@@ -2,8 +2,7 @@
 
 The STONED sampler uses small modifications to molecules represented as SELFIES to perform a search of the chemical space and generate new molecules. The use of string modifications in the SELFIES molecular representation bypasses the need for large amounts of data while maintaining a performance comparable to deep generative models.
 
-This model was incorporated on 2023-08-08.
-
+This model was incorporated on 2023-08-08.Last packaged on 2025-12-04.
 
 ## Information
 ### Identifiers
@@ -45,16 +44,16 @@ _10 of 1000 columns are shown_
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos8fma](https://hub.docker.com/r/ersiliaos/eos8fma)
-- **Docker Architecture:** `AMD64`, `ARM64`
+- **Docker Architecture:** `AMD64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8fma.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8fma.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `854`
-- **Image Size (Mb):** `772.07`
+- **Image Size (Mb):** `858.78`
 
 **Computational Performance (seconds):**
-- 10 inputs: `77.48`
+- 10 inputs: `43.53`
 - 100 inputs: `-1`
 - 10000 inputs: `-1`
 
