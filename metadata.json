@@ -37,17 +37,16 @@
     "License": "Apache-2.0",
     "Contributor": "GemmaTuron",
     "Incorporation Date": "2023-08-08",
+    "Last Packaging Date": "2025-12-04",
+    "Release": "v1.0.0",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8fma.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos8fma",
-    "Docker Architecture": [
-        "AMD64",
-        "ARM64"
-    ],
+    "Docker Architecture": "AMD64",
     "Model Size": 1.0,
     "Environment Size": 854.0,
-    "Image Size": 772.07,
-    "Computational Performance 1": 77.48,
-    "Computational Performance 2": 615.3,
+    "Image Size": 858.78,
+    "Computational Performance 1": 43.53,
+    "Computational Performance 2": 212.72,
     "Computational Performance 3": -1.0,
     "Computational Performance 4": -1.0,
     "Computational Performance 5": -1.0
