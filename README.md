@@ -2,7 +2,7 @@
 
 The STONED sampler uses small modifications to molecules represented as SELFIES to perform a search of the chemical space and generate new molecules. The use of string modifications in the SELFIES molecular representation bypasses the need for large amounts of data while maintaining a performance comparable to deep generative models.
 
-This model was incorporated on 2023-08-08.Last packaged on 2025-12-04.
+This model was incorporated on 2023-08-08.Last packaged on 2026-04-01.
 
 ## Information
 ### Identifiers
@@ -50,11 +50,11 @@ _10 of 1000 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `860`
-- **Image Size (Mb):** `858.78`
+- **Image Size (Mb):** `862.91`
 
 **Computational Performance (seconds):**
-- 10 inputs: `43.53`
-- 100 inputs: `-1`
+- 10 inputs: `54.86`
+- 100 inputs: `1626.1`
 - 10000 inputs: `-1`
 
 ### References
