@@ -43,7 +43,7 @@
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos8fma",
     "Docker Architecture": "AMD64",
     "Model Size": 1.0,
-    "Environment Size": 854.0,
+    "Environment Size": 860.0,
     "Image Size": 858.78,
     "Computational Performance 1": 43.53,
     "Computational Performance 2": 212.72,
