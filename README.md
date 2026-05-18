@@ -59,7 +59,7 @@ _10 of 1000 columns are shown_
 
 ### References
 - **Source Code**: [https://github.com/aspuru-guzik-group/stoned-selfies](https://github.com/aspuru-guzik-group/stoned-selfies)
-- **Publication**: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8153210/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8153210/)
+- **Publication**: [https://doi.org/10.1039/d1sc00231g](https://doi.org/10.1039/d1sc00231g)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2021`
 - **Ersilia Contributor:** [GemmaTuron](https://github.com/GemmaTuron)
