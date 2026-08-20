@@ -2,8 +2,8 @@
     "Identifier": "eos8fma",
     "Slug": "stoned-sampler",
     "Status": "Ready",
-    "Title": "Stoned Sampler",
-    "Description": "The STONED sampler uses small modifications to molecules represented as SELFIES to perform a search of the chemical space and generate new molecules. The use of string modifications in the SELFIES molecular representation bypasses the need for large amounts of data while maintaining a performance comparable to deep generative models.",
+    "Title": "STONED analogue generation by SELFIES mutation",
+    "Description": "Generates up to 1,000 analogues by making random mutations to a SELFIES string, exploiting the property that any such string decodes to a valid molecule. STONED, from Nigam and colleagues, showed that this deliberately simple procedure matches far heavier generative models on many benchmarks, and it also supports interpolation between two molecules along a chemical path. No learning is involved, so output is unconstrained by training data but equally unguided by any notion of desirability.",
     "Deployment": [
         "Local"
     ],
@@ -20,7 +20,7 @@
     ],
     "Output Dimension": 1000,
     "Output Consistency": "Variable",
-    "Interpretation": "Up to 1000 derivatives of the input molecule",
+    "Interpretation": "Up to 1000 generated molecules produced by random mutation of the input structure.",
     "Tag": [
         "Compound generation"
     ],
