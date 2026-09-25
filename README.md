@@ -23,7 +23,7 @@ This model was incorporated on 2023-08-08.Last packaged on 2026-09-01.
 ### Output
 - **Output Dimension:** `1000`
 - **Output Consistency:** `Variable`
-- **Interpretation:** Up to 1000 derivatives of the input molecule
+- **Interpretation:** Up to 1000 derivatives of the input, most to least similar. Only candidates with a Morgan Tanimoto similarity to the input between 0.6 and 0.9 are kept, so fewer than 1000 are usually returned (median about 315 on 100 ChEMBL compounds); unused columns are empty.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
