@@ -20,7 +20,7 @@
     ],
     "Output Dimension": 1000,
     "Output Consistency": "Variable",
-    "Interpretation": "Up to 1000 derivatives of the input molecule",
+    "Interpretation": "Up to 1000 derivatives of the input molecule, ordered from most to least similar. Only candidates with a Morgan fingerprint Tanimoto similarity to the input between 0.6 and 0.9 are kept, so fewer than 1000 are usually returned (median about 315 on a 100-compound ChEMBL benchmark, range 74 to 1000); unused output columns are empty.",
     "Tag": [
         "Compound generation"
     ],
