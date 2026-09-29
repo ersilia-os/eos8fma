@@ -4,6 +4,8 @@ from rdkit.Chem import AllChem
 from rdkit import Chem
 from exmol import run_stoned
 
+N_OUTPUTS = 100
+
 
 def calculate_similarity(ref_mol, mol_list):
     ref_fp = AllChem.GetMorganFingerprint(ref_mol, 2)
@@ -75,8 +77,8 @@ class StonedSingleSampler(object):
         sampled_smiles = self._select_by_similarity(sampled_smiles)
         print("Molecules remaining", len(sampled_smiles))
         sampled_smiles_ordered = self._sort_smiles(smiles, sampled_smiles)
-        sampled_smiles_selected = sampled_smiles_ordered[:1000]
-        if len(sampled_smiles_selected) < 1000:
-            sampled_smiles_selected.extend([None] * (1000 - len(sampled_smiles_selected)))
+        sampled_smiles_selected = sampled_smiles_ordered[:N_OUTPUTS]
+        if len(sampled_smiles_selected) < N_OUTPUTS:
+            sampled_smiles_selected.extend([None] * (N_OUTPUTS - len(sampled_smiles_selected)))
         return sampled_smiles_selected
     
