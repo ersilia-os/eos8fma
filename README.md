@@ -1,6 +1,6 @@
 # STONED analogue generation by SELFIES mutation
 
-The STONED sampler uses small modifications to molecules represented as SELFIES to perform a search of the chemical space and generate new molecules. The use of string modifications in the SELFIES molecular representation bypasses the need for large amounts of data while maintaining a performance comparable to deep generative models.
+Generates up to 100 analogues of the input by making one or two random mutations to its SELFIES string, exploiting the fact that any such string decodes to a valid molecule. STONED, from Nigam and colleagues, showed that this untrained procedure matches far heavier generative models on standard benchmarks and also builds chemical paths between two molecules. Ersilia draws 5000 raw candidates per input, keeps only those whose Morgan Tanimoto similarity to the seed lies between 0.6 and 0.9, and returns them most similar first. Sampling is unseeded.
 
 This model was incorporated on 2023-08-08.Last packaged on 2026-09-29.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-08-08.Last packaged on 2026-09-29.
 ### Output
 - **Output Dimension:** `100`
 - **Output Consistency:** `Variable`
-- **Interpretation:** Up to 100 derivatives of the input, most to least similar. Only candidates with a Morgan Tanimoto similarity to the input between 0.6 and 0.9 are kept, so fewer than 100 may be returned for some inputs; unused columns are empty.
+- **Interpretation:** Up to 100 analogues from unseeded SELFIES mutation, kept at Morgan Tanimoto similarity 0.6 to 0.9, most similar first.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
