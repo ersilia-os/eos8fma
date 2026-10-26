@@ -25,8 +25,10 @@ sampler = StonedSingleSampler()
 outputs = []
 for smi in smiles_list:
     try:
-        o = sampler.sample(smi, N_RAW_SAMPLES)  # "sample" keeps the N_OUTPUTS most similar candidates
-    except Exception:
+        # "sample" picks up to N_OUTPUTS candidates at random inside the window, listed most similar first
+        o = sampler.sample(smi, N_RAW_SAMPLES)
+    except Exception as e:
+        print(f"STONED failed for {smi!r}: {type(e).__name__}: {e}", file=sys.stderr)
         o = [""] * N_OUTPUTS
     outputs += [o]
 
