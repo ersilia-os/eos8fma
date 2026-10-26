@@ -2,7 +2,7 @@
 
 Generates up to 100 analogues of the input by making one or two random mutations to its SELFIES string, exploiting the fact that any such string decodes to a valid molecule. STONED, from Nigam and colleagues, showed that this untrained procedure matches far heavier generative models on standard benchmarks and also builds chemical paths between two molecules. Ersilia draws 5000 raw candidates per input, keeps only those whose Morgan Tanimoto similarity to the seed lies between 0.6 and 0.9, picks up to 100 of them at random and lists them most similar first. Sampling is unseeded.
 
-This model was incorporated on 2023-08-08.Last packaged on 2026-09-29.
+This model was incorporated on 2023-08-08.Last packaged on 2026-10-26.
 
 ## Information
 ### Identifiers
@@ -50,11 +50,11 @@ _10 of 100 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `867`
-- **Image Size (Mb):** `876.34`
+- **Image Size (Mb):** `878.46`
 
 **Computational Performance (seconds):**
-- 10 inputs: `31.21`
-- 100 inputs: `428.16`
+- 10 inputs: `34.07`
+- 100 inputs: `598.64`
 - 10000 inputs: `-1`
 
 ### References
