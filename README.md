@@ -1,6 +1,6 @@
 # STONED analogue generation by SELFIES mutation
 
-Generates up to 100 analogues of the input by making one or two random mutations to its SELFIES string, exploiting the fact that any such string decodes to a valid molecule. STONED, from Nigam and colleagues, showed that this untrained procedure matches far heavier generative models on standard benchmarks and also builds chemical paths between two molecules. Ersilia draws 5000 raw candidates per input, keeps only those whose Morgan Tanimoto similarity to the seed lies between 0.6 and 0.9, and returns them most similar first. Sampling is unseeded.
+Generates up to 100 analogues of the input by making one or two random mutations to its SELFIES string, exploiting the fact that any such string decodes to a valid molecule. STONED, from Nigam and colleagues, showed that this untrained procedure matches far heavier generative models on standard benchmarks and also builds chemical paths between two molecules. Ersilia draws 5000 raw candidates per input, keeps only those whose Morgan Tanimoto similarity to the seed lies between 0.6 and 0.9, picks up to 100 of them at random and lists them most similar first. Sampling is unseeded.
 
 This model was incorporated on 2023-08-08.Last packaged on 2026-09-29.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-08-08.Last packaged on 2026-09-29.
 ### Output
 - **Output Dimension:** `100`
 - **Output Consistency:** `Variable`
-- **Interpretation:** Up to 100 analogues from unseeded SELFIES mutation, kept at Morgan Tanimoto similarity 0.6 to 0.9, most similar first.
+- **Interpretation:** Up to 100 analogues from unseeded SELFIES mutation, picked at random among those at Morgan Tanimoto similarity 0.6 to 0.9, listed most similar first.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
