@@ -2,7 +2,8 @@
 
 Generates up to 100 analogues of the input by making one or two random mutations to its SELFIES string, exploiting the fact that any such string decodes to a valid molecule. STONED, from Nigam and colleagues, showed that this untrained procedure matches far heavier generative models on standard benchmarks and also builds chemical paths between two molecules. Ersilia draws 5000 raw candidates per input, keeps only those whose Morgan Tanimoto similarity to the seed lies between 0.6 and 0.9, picks up to 100 of them at random and lists them most similar first. Sampling is unseeded.
 
-This model was incorporated on 2023-08-08.Last packaged on 2026-10-26.
+This model was incorporated on 2023-08-08.
+Last packaged on 2026-10-26.
 
 ## Information
 ### Identifiers
@@ -46,6 +47,7 @@ _10 of 100 columns are shown_
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos8fma](https://hub.docker.com/r/ersiliaos/eos8fma)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8fma.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8fma.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos8fma_v3.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos8fma_v3.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
